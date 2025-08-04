@@ -46,7 +46,7 @@ let podeEnfrentarGuardião = vidaSuficiente && (ataqueForte || nivelAvancado);
 // Etapa 6 ->  Geração da Lore do Personagem
 console.log("Lore de:", nome);
 console.log("");
-console.log("-------------------------------;--------------------------------------------------------------------------------------")
+console.log("----------------------------------------------------------------------------------------------------------------------")
 console.log(`${nome} é um herói que tem apenas ${idade} anos de idade da classe ${classe} e já está com o seu nivel em ${nivel} e com 6000 de XP que é um grande feito para sua idade.`);
 console.log("");
 console.log(`Recentemente ${nome} em sua jornada ele derrotou um boss secreto do andar 71 e dropou itens especiais como a espada ${ARMA_RARIDADE} ${NOME_ARMA} e a armadura ${ARMADURA_RARIDADE}: ${NOME_ARMADURA}, e ganhou mais 150 de XP.`);
@@ -63,3 +63,73 @@ console.log(`⚔️Dano:  ${ataqueTotal}`);
 console.log(`❤️Vida:  ${vidaTotal}`);
 console.log(`⭐XP:    ${xp} `);
 console.log(`💰Ouro:  ${ouro}`);
+
+console.log("---------------------------------------------------------------------------------------------------------------------");
+// Nivel 2 - Estruturas Condicionais e Versionamento Arcano
+
+console.log("Continuação da lore de Kasume")
+console.log("")
+
+// Etapa 1 -> Resgate do Nível 1
+
+// Acrecentando atributos / estátisticas
+let manaAtual = 650;
+let manaMaxima = 650;
+let agilidade = 900;
+let combatesVencidos = 63;
+
+// Estado atual da história
+
+let local = "Torre da ascensão"
+let localAtual = "Torre da ascensão - andar 46"
+let missãoAtual = "Livro encantado - (protection II)"
+let novaMissao = "Chefe final andar 72"
+
+console.log("Estastiticas do herói")
+console.log(`Herói  - ${nome}`);
+console.log(`${classe}`)
+console.log("--------------------------");
+console.log(`📈Nivel:     ${nivel}`);
+console.log(`⚔️Dano:      ${ataqueTotal}`);
+console.log(`❤️Vida:      ${vidaTotal}`);
+console.log(`🔥Mana:      ${manaMaxima}`);
+console.log(`⏩Agilidade  ${agilidade}`)
+console.log(`⭐XP:        ${xp} `);
+console.log(`💰Ouro:      ${ouro}`);
+console.log("")
+
+console.log("---------------------------------------------------------------------------------------------------------------------")
+
+// Prólogo
+console.log(`${nome} está a caminho do andar 31 para concluir sua atual missão do ${missãoAtual}, ele precisa desse encantamento para poder aumentar mais um pouco sua defesa antes de avançar para o proximo andar da ${local}, para poder enfrentar o boss da sua proxima missão que é o ${novaMissao} a recomendação minima de defesa é de 2300. `)
+
+// Etapa 2 -> Estrutura Narrativa
+// Capitulo 1 
+
+// Criação e dados da nova personagem
+let antigaEspada = "Ultimate sword"
+let novaPersonagem = "Korozumi Tama"
+let classeTama = "Guerreira"
+let dinheiro = 200
+let espadaTama = 0
+let equipeTama = "nao tem"
+
+console.log(`${nome} atualmente está na ${localAtual}, enquanto nosso herói caminha até o andar 31 ele encontra um grupo de aventureiros derrotando monstros, nessa batalha ele repara que tem uma menininha em perigo próximo dele, a menininha ja era uma criança aventureira que estava com sua espada quebrada.`);
+console.log(`Vendo isso o herói decide salvar a menininha, como ${nome} ja estava muito avançado para aquele andar ele derrota o monstro facilmente e decide ajudar a menininha dando novos equipamentos a ela. Conversando com ela o herói descobre mais sobre ela, seu nome é ${novaPersonagem} e é uma ${classeTama}, ele quer dar uma nova espada para a Tama nisso ele lembra que ele ainda tem sua antiga espada guardada a ${antigaEspada}. Ele pergunta se a Tama tem alguma espada para usar`)
+
+console.log("")
+console.log(" -Minha espada quebrou e não tenho nenhuma outra para usar")
+if (espadaTama ==0){
+    console.log("Tama precisa de uma nova espada!")
+} else {
+    console.log("Tama não precisa de uma nova espada.")
+}
+
+console.log(`${nome} decide entregar sua antiga espada para Tama, e a convida para ser sua companheira durante sua aventura.`)
+ 
+if(equipeTama = "nao tem"){
+    console.log(`Tama entra e vira companheira de ${nome}`);
+} else {
+    console.log(`Kasume apenas convida Tama para ser sua nova companheira`)
+}
+
