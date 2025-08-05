@@ -115,14 +115,14 @@ let espadaTama = 0
 let equipeTama = "nao tem"
 
 console.log(`${nome} atualmente está na ${localAtual}, enquanto nosso herói caminha até o andar 31 ele encontra um grupo de aventureiros derrotando monstros, nessa batalha ele repara que tem uma menininha em perigo próximo dele, a menininha ja era uma criança aventureira que estava com sua espada quebrada.`);
-console.log(`Vendo isso o herói decide salvar a menininha, como ${nome} ja estava muito avançado para aquele andar ele derrota o monstro facilmente e decide ajudar a menininha dando novos equipamentos a ela. Conversando com ela o herói descobre mais sobre ela, seu nome é ${novaPersonagem} e é uma ${classeTama}, ele quer dar uma nova espada para a Tama nisso ele lembra que ele ainda tem sua antiga espada guardada a ${antigaEspada}. Ele pergunta se a Tama tem alguma espada para usar`)
+console.log(`Vendo isso o herói decide salvar a menininha, como ${nome} ja estava muito avançado para aquele andar ele derrota o monstro facilmente e decide ajudar a menininha dando novos equipamentos a ela. Conversando com ela o herói descobre mais sobre ela, seu nome é ${novaPersonagem} e é uma ${classeTama}, ele quer dar uma nova espada para a Tama nisso ele lembra que ele ainda tem sua antiga espada guardada a ${antigaEspada}. Ele pergunta se a Tama tem alguma espada para usar`);
 
-console.log("")
-console.log(" -Minha espada quebrou e não tenho nenhuma outra para usar")
+console.log("");
+console.log(" -Minha espada quebrou e não tenho nenhuma outra para usar");
 if (espadaTama ==0){
-    console.log("Tama precisa de uma nova espada!")
+    console.log("Tama precisa de uma nova espada!");
 } else {
-    console.log("Tama não precisa de uma nova espada.")
+    console.log("Tama não precisa de uma nova espada.");
 }
 
 console.log(`${nome} decide entregar sua antiga espada para Tama, e a convida para ser sua companheira durante sua aventura.`)
@@ -130,6 +130,25 @@ console.log(`${nome} decide entregar sua antiga espada para Tama, e a convida pa
 if(equipeTama = "nao tem"){
     console.log(`Tama entra e vira companheira de ${nome}`);
 } else {
-    console.log(`Kasume apenas convida Tama para ser sua nova companheira`)
+    console.log(`Kasume apenas convida Tama para ser sua nova companheira`);
 }
 
+console.log("")
+// Comprando uma armadura para tama
+
+let armadura1 = "Couro de Dragão";
+let armadura2 = "Placas Celestias";
+let preco1 = 800;
+let preco2 = 1500;
+let defesa1 = 300;
+let defesa2 = 450;
+let armaduraEscolhida = "Couro de Dragão"
+
+console.log(`${nome} e Tama chegam ao andar 31 e lá encontram um mercador misterioso vendendo armaduras, falando com ele ${nome} decide comprar uma armadura para ${novaPersonagem}, as armaduras disponveis eram ${armadura1} custando ${preco1} de ouros com uma defesa de ${defesa1} e a outra é ${armadura2} custando o total de ${preco2} ouros com a defesa de ${defesa2}.`);
+
+// Sistema de compra da armadura
+
+if (ouro >= preco1 === armaduraEscolhida ){
+    console.log(`${nome} compra a armadura ${armaduraEscolhida} por ${preco1}`)
+    ouro -= preco1
+}
