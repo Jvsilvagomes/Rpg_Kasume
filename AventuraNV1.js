@@ -107,15 +107,19 @@ console.log(`${nome} está a caminho do andar 31 para concluir sua atual missão
 // Capitulo 1 
 
 // Criação e dados da nova personagem
-let antigaEspada = "Ultimate sword"
-let novaPersonagem = "Korozumi Tama"
-let classeTama = "Guerreira"
-let defesaTama = 300
-let dinheiro = 200
-let espadaTama = 0
-let equipeTama = "nao tem"
+let antigaEspada = "Ultimate sword";
+let novaPersonagem = "Korozumi Tama";
+let classeTama = "Guerreira";
+let nivelTama = 56;
+let defesaTama = 300;
+let dinheiro = 200;
+let espadaTama = 0;
+let equipeTama = "nao tem";
+
+console.log("")
 
 console.log(`${nome} atualmente está na ${localAtual}, enquanto nosso herói caminha até o andar 31 ele encontra um grupo de aventureiros derrotando monstros, nessa batalha ele repara que tem uma menininha em perigo próximo dele, a menininha ja era uma criança aventureira que estava com sua espada quebrada.`);
+console.log("")
 console.log(`Vendo isso o herói decide salvar a menininha, como ${nome} ja estava muito avançado para aquele andar ele derrota o monstro facilmente e decide ajudar a menininha dando novos equipamentos a ela. Conversando com ela o herói descobre mais sobre ela, seu nome é ${novaPersonagem} e é uma ${classeTama}, ele quer dar uma nova espada para a Tama nisso ele lembra que ele ainda tem sua antiga espada guardada a ${antigaEspada}. Ele pergunta se a Tama tem alguma espada para usar`);
 
 console.log("");
@@ -126,7 +130,7 @@ if (espadaTama ==0){
     console.log("Tama não precisa de uma nova espada.");
 }
 
-console.log(`${nome} decide entregar sua antiga espada para Tama, e a convida para ser sua companheira durante sua aventura.`)
+console.log(`${nome} decide entregar sua antiga espada para Tama, e a convida para ser sua companheira durante sua aventura.`);
  
 if(equipeTama = "nao tem"){
     console.log(`Tama entra e vira companheira de ${nome}`);
@@ -176,7 +180,35 @@ console.log("");
 
 if (ouro < 1000 && armaduraEscolhida === "Couro de Dragão"){
     console.log(`${nome} agora tem ${ouro} de ouro`);
-    console.log(`${novaPersonagem} pode caçar monstros com mais facilidade`)
+    console.log(`${novaPersonagem} pode caçar monstros com mais facilidade`);
 } else if (ouro >= 2000){
-    console.log(`${nome} ainda tem bastante dinheiro,`)
+    console.log(`${nome} ainda tem bastante dinheiro,`);
+} else {
+    console.log(`${novaPersonagem} inspeceiona a sua mais nova armadura "isso vai me ajudar muito"`);
 }
+
+console.log("");
+console.log("----------------------------------------------------------------------------------------------------------------------------");
+
+// Chegada a sala do boss do andar 31 -> em busca do livro encantado
+let vasculhar = true;
+let repetir = false;
+
+// Veriificando se podem entrar na sala do boss - para poder entrar na sala do boss o nivel minimo é  35
+if( nivelTama && nivel > 35){
+    console.log("Pode entrar na sala do boss");
+}
+console.log("Boss foi derrotado com extrama facilidade pela nova dupla dinamica.");
+
+// Verificando seos hérois querem vasculhar  boss
+if(vasculhar === true){
+    console.log("Boss vasculhado com sucesso!");
+}
+console.log(`${nome} consegue dropar o livro mágico de primeira`);
+
+// Tem a opção de repetir a sala do boss caso queira repetir a sala do boss, caso contrário saindo da salaa do boss ele só pode ser derrotado novamente em 4 horas
+if(repetir != true){
+    console.log(`Saindo da sala do boss. Chefe retorna em 4 horas!`);
+}
+
+console.log(`${nome} e ${novaPersonagem} começam a ir até o andar 72, para fazer a ${novaMissao}`);
