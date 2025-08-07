@@ -110,6 +110,7 @@ console.log(`${nome} está a caminho do andar 31 para concluir sua atual missão
 let antigaEspada = "Ultimate sword"
 let novaPersonagem = "Korozumi Tama"
 let classeTama = "Guerreira"
+let defesaTama = 300
 let dinheiro = 200
 let espadaTama = 0
 let equipeTama = "nao tem"
@@ -142,13 +143,40 @@ let preco1 = 800;
 let preco2 = 1500;
 let defesa1 = 300;
 let defesa2 = 450;
-let armaduraEscolhida = "Couro de Dragão"
+let armaduraEscolhida = "Couro de Dragão";
 
 console.log(`${nome} e Tama chegam ao andar 31 e lá encontram um mercador misterioso vendendo armaduras, falando com ele ${nome} decide comprar uma armadura para ${novaPersonagem}, as armaduras disponveis eram ${armadura1} custando ${preco1} de ouros com uma defesa de ${defesa1} e a outra é ${armadura2} custando o total de ${preco2} ouros com a defesa de ${defesa2}.`);
+
+console.log("");
 
 // Sistema de compra da armadura
 
 if (ouro >= preco1 === armaduraEscolhida ){
-    console.log(`${nome} compra a armadura ${armaduraEscolhida} por ${preco1}`)
-    ouro -= preco1
+    console.log(`${nome} compra a armadura ${armaduraEscolhida} por ${preco1}`);
+    ouro -= preco1;
+}
+    // efeitos da nova armadura
+    if(armaduraEscolhida === "Couro de Dragão"){
+        console.log(`${nome} compra a armadura ${armaduraEscolhida} para Tama!`);
+        console.log(`${novaPersonagem} ganha resistencia ao fogo!, imune a queimaduras.`);
+        defesaTama += 300;
+    } else if (armaduraEscolhida === "Placas Celestiais"){
+        console.log(`As Placas emitem luz sagras! + 100 de defesa contra morrtos-vivos.`);
+} else if (ouro <= 500){
+        console.log(`${nome} não consegue comprar ${armaduraEscolhida} e compra armadura de ferro basica.`);
+        defesaTama += 100;
+} else {
+        console.log(`${nome} está falido e nâo consegue comprar a armadura, vendedor ri e desaparece sobre as nevoas!`);
+        console.log(`${novaPersonagem} fica sem armadura nova. Kasume promete compensa-la depois.`);
+}
+
+console.log("");
+
+// Pós compra, Atualização do ouro dos personagens
+
+if (ouro < 1000 && armaduraEscolhida === "Couro de Dragão"){
+    console.log(`${nome} agora tem ${ouro} de ouro`);
+    console.log(`${novaPersonagem} pode caçar monstros com mais facilidade`)
+} else if (ouro >= 2000){
+    console.log(`${nome} ainda tem bastante dinheiro,`)
 }
