@@ -108,6 +108,7 @@ console.log(`${nome} está a caminho do andar 31 para concluir sua atual missão
 
 // Criação e dados da nova personagem
 let antigaEspada = "Ultimate sword";
+let EspadaAntigaDano = 150;
 let novaPersonagem = "Korozumi Tama";
 let classeTama = "Guerreira";
 let nivelTama = 56;
@@ -188,7 +189,7 @@ if (ouro < 1000 && armaduraEscolhida === "Couro de Dragão"){
 }
 
 console.log("");
-console.log("----------------------------------------------------------------------------------------------------------------------------");
+console.log("---------------------------------------------------------------------------------------------------------------------");
 
 // Chegada a sala do boss do andar 31 -> em busca do livro encantado
 let vasculhar = true;
@@ -212,3 +213,36 @@ if(repetir != true){
 }
 
 console.log(`${nome} e ${novaPersonagem} começam a ir até o andar 72, para fazer a ${novaMissao}`);
+
+// Conrinuação da saga de Kasume -> Nivel 3
+// dados atuais dos personagens
+
+console.log("-------------------------------------------------------------------------------------------------------------------")
+console.log("Continuação da saga de Kasume e Tama")
+
+console.log("Estastiticas do herói")
+console.log(`Herói  - ${nome}`);
+console.log(`${classe}`)
+console.log("--------------------------");
+console.log(`📈Nivel:     ${nivel}`);
+console.log(`⚔️Dano:      ${ataqueTotal}`);
+console.log(`❤️Vida:      ${vidaTotal}`);
+console.log(`🔥Mana:      ${manaMaxima}`);
+console.log(`⏩Agilidade  ${agilidade}`)
+console.log(`⭐XP:        ${xp} `);
+console.log(`💰Ouro:      ${ouro}`);
+console.log("")
+console.log("--------------------------");
+
+console.log(`Herói  - ${novaPersonagem}`);
+console.log(`${classeTama}`)
+console.log(`📈Nivel:     ${nivelTama}`);
+console.log(`⚔️Dano:      ${EspadaAntigaDano}`);
+console.log(`❤️Vida:      ${defesaTama}`);
+console.log(`💰Ouro:      ${dinheiro}`);
+console.log("--------------------------");
+
+// Criação de novos elementos para poder ir a próxima missão
+
+let iventarioKasume = ["Big Bertha", "Armadura do guardião real", "Poção de vida"]
+let iventarioTama = ["Ultimate sword", "Armadura - Couro de Dragão", "Poção de vida instantanea"]
