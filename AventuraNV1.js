@@ -217,10 +217,10 @@ console.log(`${nome} e ${novaPersonagem} começam a ir até o andar 72, para faz
 // Conrinuação da saga de Kasume -> Nivel 3
 // dados atuais dos personagens
 
-console.log("-------------------------------------------------------------------------------------------------------------------")
-console.log("Continuação da saga de Kasume e Tama")
+console.log("-------------------------------------------------------------------------------------------------------------------");
+console.log("Continuação da saga de Kasume e Tama");
 
-console.log("Estastiticas do herói")
+console.log("Estastiticas do herói");
 console.log(`Herói  - ${nome}`);
 console.log(`${classe}`)
 console.log("--------------------------");
@@ -244,5 +244,8 @@ console.log("--------------------------");
 
 // Criação de novos elementos para poder ir a próxima missão
 
-let iventarioKasume = ["Big Bertha", "Armadura do guardião real", "Poção de vida"]
-let iventarioTama = ["Ultimate sword", "Armadura - Couro de Dragão", "Poção de vida instantanea"]
+let iventarioKasume = ["Big Bertha", "Armadura do guardião real", "Poção de vida"];
+let iventarioTama = ["Ultimate sword", "Armadura - Couro de Dragão", "Poção de vida instantanea"];
+let aliados = ["Arthur Targaryen", "Korozumi Tama",];
+let inimigosEncontrados = ["Principe das Trevas", "Cavaleiro somrio", "Guarda das sombras"];
+let tesouroColetado = []
