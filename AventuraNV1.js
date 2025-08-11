@@ -248,6 +248,7 @@ let iventarioKasume = ["Big Bertha", "Armadura do guardião real", "Poção de v
 let iventarioTama = ["Ultimate sword", "Armadura - Couro de Dragão", "Poção de vida instantanea"];
 let aliados = ["Korozumi Tama"];
 let inimigosEncontrados = ["Principe das Trevas", "Cavaleiro somrio", "Guarda das sombras"];
+let inimigo = "Principe das trevas"
 let tesouroColetado = [];
 
 // Chegada ao andar 71
@@ -267,4 +268,31 @@ for (let i = 0; i < inimigosEncontrados.length; i++){
     const inimigo = inimigosEncontrados[i];
     console.log(`Rodada ${i + 1}: o grupo enfrenta o terrivel ${inimigo}.`);
 }
+let i = 0
+if (i === 0) {
+    console.log(` ${nome} golpeia o ${inimigo} com a lendária ${iventarioKasume[0]}, causando um grande dano.`);
+    ouro += 50;
+} else if (i === 1) {
+    console.log(`${aliados[0]} desfere um ataque preciso com a ${iventarioTama[0]}, enfraquecendo o Cavaleiro Sombrio`);
+    vida += 10;
+} else {
+    console.log(` O novo aliado, ${aliados[1]}, usa sua magia para quebrar a defesa do Dragão do Fogo, garantindo a vitória`);
+    tesouroColetado.push("Pedra da Chama Eterna");
+    xp += 200;
+}
 
+console.log(`Kasume, ${aliados[0]} e ${aliados[1]} vasculham o campo de batalha, coletando espólios.`);
+
+// Loop for para adicionar itens ao tesouro coletado
+let novosItens = ["Fragmentos de esmeralda", "Essência de Sombra", "Elixir do Vigor"];
+for (let i = 0; i < novosItens.length; i++) {
+tesouroColetado.push(novosItens[i]);
+}
+
+console.log(`Tesouros coletados na batalha: ${tesouroColetado.length} itens mágicos!`);
+
+console.log(`Com a ajuda de seus novos aliados, ${nome} conquistou o andar 72 da Torre da Ascensão.`);
+console.log(`${nome}, agora um verdadeiro mestre, sentiu seu destino se expandir`);
+console.log(`Pois rumores de mundos além, regidos por funções e objetos, começavam a se espalhar.`);
+console.log(`${nome} olhou para o horizonte, com seu novo inventário e equipe e percebe o quanto ja chegou longe.`);
+console.log(`A jornada do Herói esta longe de acabar`);
