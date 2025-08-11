@@ -246,6 +246,25 @@ console.log("--------------------------");
 
 let iventarioKasume = ["Big Bertha", "Armadura do guardião real", "Poção de vida"];
 let iventarioTama = ["Ultimate sword", "Armadura - Couro de Dragão", "Poção de vida instantanea"];
-let aliados = ["Arthur Targaryen", "Korozumi Tama",];
+let aliados = ["Korozumi Tama"];
 let inimigosEncontrados = ["Principe das Trevas", "Cavaleiro somrio", "Guarda das sombras"];
-let tesouroColetado = []
+let tesouroColetado = [];
+
+// Chegada ao andar 71
+
+console.log(`${nome} e ${novaPersonagem} chegam ao andar 71 da torre da ascensão e la encontra um homem descansando após uma batalha contra o chefe final daquele andar onde Kasume ja havia derrotado a algum tempo atrás. `);
+
+console.log(`${nome} convida ele para ir até o boss final do andar 72 junto a eles`);
+
+aliados.push("Arthur Targaryen");
+let itemRemovido = iventarioKasume.pop();
+console.log(`Para ele poder se juntar a nossa dupla ${nome} lhe deu uma poção de vida instantanea do seu iventario para ele se curar`);
+
+// Exploração do andar e Batalha
+console.log(`O trio avança e sente um tremor, e de repente aparecem ${inimigosEncontrados.length}monstros sombrios`);
+
+for (let i = 0; i < inimigosEncontrados.length; i++){
+    const inimigo = inimigosEncontrados[i];
+    console.log(`Rodada ${i + 1}: o grupo enfrenta o terrivel ${inimigo}.`);
+}
+
